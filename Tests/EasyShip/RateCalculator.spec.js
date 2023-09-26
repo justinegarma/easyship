@@ -1,6 +1,7 @@
 const { test, expect, chromium } = require('@playwright/test');
 import { RateCalculator } from '../../pages/RateCalculator'
 
+//Test
 test.beforeEach(async ({page, context}) => {
     await page.goto('https://www.easyship.com/shipping-rate-calculator/usa-to-usa');
     await page.waitForLoadState('networkidle');
